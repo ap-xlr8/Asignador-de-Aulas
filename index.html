@@ -1,134 +1,152 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programa de Asignación de Aulas - Descarga y Detalles</title>
-    <!-- Carga la fuente Inter desde Google Fonts para una tipografía moderna -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Carga el CDN de Tailwind CSS para todos los estilos -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        /* Define la fuente predeterminada para el cuerpo del documento */
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-        /* Estilos para la barra de desplazamiento */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #1f2937;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #4b5563;
-            border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #6b7280;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programa de Asignación de Aulas - Descarga y Detalles</title>
+  <!-- Fuente Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #1f2937;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #4b5563;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #6b7280;
+    }
+  </style>
 </head>
 <body class="bg-gray-900 text-gray-200 flex justify-center p-4 md:p-8">
 
-    <!-- Contenedor principal con diseño de tarjeta -->
-    <div class="container bg-gray-800 p-6 md:p-10 rounded-2xl shadow-xl border border-gray-700 max-w-4xl w-full">
+  <div class="container bg-gray-800 p-6 md:p-10 rounded-2xl shadow-2xl border border-gray-700 max-w-5xl w-full">
 
-        <!-- Encabezado de la página -->
-        <header class="text-center pb-6 md:pb-8 border-b border-gray-700 mb-6 md:mb-8">
-            <img class="logo w-20 mx-auto mb-2 opacity-90 transition-transform duration-300 hover:scale-105" src="https://cdn-icons-png.flaticon.com/512/3804/3804297.png" alt="Logo institucional">
-            <h1 class="text-4xl md:text-5xl font-bold text-indigo-400 mb-2 tracking-tight">Programa de Asignación de Aulas</h1>
-        </header>
+    <!-- Header -->
+    <header class="text-center pb-8 border-b border-gray-700 mb-8">
+      <img class="logo w-24 mx-auto mb-3 opacity-90 transition-transform duration-300 hover:scale-110" src="https://cdn-icons-png.flaticon.com/512/3804/3804297.png" alt="Logo institucional">
+      <h1 class="text-4xl md:text-5xl font-extrabold text-indigo-400 mb-2 tracking-tight drop-shadow">Programa de Asignación de Aulas</h1>
+      <p class="text-gray-400 text-lg">Gestión académica simplificada, clara y accesible</p>
+    </header>
 
-        <!-- Sección de Descripción General -->
-        <section class="mb-8">
-            <h2 class="text-2xl font-semibold border-l-4 border-indigo-500 pl-4 mb-4 text-indigo-300">Descripción General</h2>
-            <p class="text-gray-300 leading-relaxed mb-4">
-                El <b>Programa de Asignación de Aulas</b> es un software desarrollado en Python y distribuido como ejecutable para Windows. Permite mostrar y gestionar la asignación de aulas de manera visual y organizada, funcionando en cualquier ordenador con Windows <b>sin requerir la instalación de Python</b> ni dependencias adicionales.
-            </p>
-            <div class="info-box bg-gray-700 border-l-4 border-emerald-500 p-4 rounded-lg text-gray-400">
-                <b class="text-gray-200">Nota:</b> El sistema está diseñado para uso local y no es una aplicación instalada permanentemente; debe abrirse cada vez que se necesite. Como es un ejecutable, debe ser ejecutado manualmente y no se integra como una aplicación del sistema.
-            </div>
-        </section>
+    <!-- Descripción -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold border-l-4 border-indigo-500 pl-4 mb-4 text-indigo-300">Descripción General</h2>
+      <p class="text-gray-300 leading-relaxed mb-4">
+        El <b>Programa de Asignación de Aulas</b> es un software desarrollado en Python y distribuido como ejecutable para Windows. Permite gestionar y visualizar la asignación de aulas de manera clara, sin necesidad de instalar Python ni dependencias adicionales.
+      </p>
+      <div class="bg-gray-700 border-l-4 border-emerald-500 p-4 rounded-lg text-gray-400 shadow">
+        <b class="text-gray-200">Nota:</b> El sistema debe ejecutarse cada vez que se necesite; no se instala de forma permanente ni se integra como aplicación del sistema.
+      </div>
+    </section>
 
-        <!-- Sección de Características Principales -->
-        <section class="mb-8">
-            <h2 class="text-2xl font-semibold border-l-4 border-indigo-500 pl-4 mb-4 text-indigo-300">Características Principales</h2>
-            <ul class="list-disc list-inside space-y-2 text-gray-300">
-                <li><b>Visualización clara</b> de la asignación de aulas y horarios.</li>
-                <li><b>Ejecutable independiente</b>: no requiere instalación de Python.</li>
-                <li><b>Distribución local</b>: los datos y la operación se mantienen en el equipo del usuario.</li>
-            </ul>
-        </section>
+    <!-- Características -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold border-l-4 border-indigo-500 pl-4 mb-4 text-indigo-300">Características Principales</h2>
+      <ul class="list-disc list-inside space-y-2 text-gray-300">
+        <li><b>Visualización clara</b> de asignación de aulas y horarios.</li>
+        <li><b>Ejecutable independiente</b>, sin instalación de Python.</li>
+        <li><b>Distribución local</b>: todos los datos permanecen en el equipo del usuario.</li>
+      </ul>
+    </section>
 
-        <!-- Sección de Acceso al Repositorio -->
-        <section class="mb-8">
-            <h2 class="text-2xl font-semibold border-l-4 border-indigo-500 pl-4 mb-4 text-indigo-300">Acceso al Repositorio</h2>
-            <p class="text-gray-300 leading-relaxed">
-                El código fuente y las versiones del programa están disponibles en GitHub. Puede consultar, colaborar o reportar mejoras a través del siguiente enlace:
-            </p>
-            <a class="inline-block mt-2 text-indigo-400 hover:text-indigo-300 font-semibold transition-colors duration-200" href="https://github.com/ap-xlr8/Asignador-de-Aulas" target="_blank">
-                <span class="mr-2">&#128187;</span>Ver repositorio en GitHub
-            </a>
-        </section>
+    <!-- NUEVA SECCIÓN: Repositorios -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold border-l-4 border-indigo-500 pl-4 mb-6 text-indigo-300">Repositorios del Proyecto</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- API -->
+        <a href="https://github.com/ap-xlr8/Asignaci-n-Aulas" target="_blank" 
+           class="bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-2xl hover:bg-gray-600 transition duration-300 flex flex-col items-center text-center">
+          <img src="https://cdn-icons-png.flaticon.com/512/1161/1161388.png" alt="API" class="w-14 mb-3">
+          <h3 class="text-lg font-bold text-indigo-400">Repositorio API</h3>
+          <p class="text-gray-400 text-sm mt-2">Código fuente y lógica de la API para gestión de horarios.</p>
+        </a>
 
-        <!-- Sección de Descarga -->
-        <section class="text-center mb-8">
-            <h2 class="text-2xl font-semibold border-l-4 border-indigo-500 pl-4 inline-block text-indigo-300">Descargar Sistema</h2>
-            <p class="text-gray-300 leading-relaxed mt-4 mb-6">
-                A continuación puede consultar las versiones disponibles, sus actualizaciones y descargar el sistema:
-            </p>
-            <div class="overflow-x-auto">
-                <table class="download-table w-full bg-gray-700 rounded-lg shadow-lg">
-                    <thead>
-                        <tr>
-                            <th class="bg-indigo-600 text-white p-3 md:p-4 text-lg rounded-t-lg">Versión</th>
-                            <th class="bg-indigo-600 text-white p-3 md:p-4 text-lg">Fecha de Publicación</th>
-                            <th class="bg-indigo-600 text-white p-3 md:p-4 text-lg">Mejoras / Cambios</th>
-                            <th class="bg-indigo-600 text-white p-3 md:p-4 text-lg rounded-t-lg">Descargar</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                      
-                        <tr class="border-b border-gray-600 last:border-b-0">
-                            <td class="p-3 md:p-4 text-gray-200">1.0</td>
-                            <td class="p-3 md:p-4 text-gray-200">2025-01-20</td>
-                            <td class="p-3 md:p-4 text-gray-200 text-left">Versión inicial, funciones básicas de asignación y visualización.</td>
-                            <td class="p-3 md:p-4">
-                                <a class="download-btn bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-2 px-4 rounded-lg shadow-md transition-colors" href="https://github.com/ap-xlr8/asignacion-aulas/releases/download/v1.0/AsignacionAulas-Windows-v1.0.exe">Descargar</a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
+        <!-- Página -->
+        <a href="https://github.com/ap-xlr8/Asignador-de-Aulas-Page" target="_blank" 
+           class="bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-2xl hover:bg-gray-600 transition duration-300 flex flex-col items-center text-center">
+          <img src="https://cdn-icons-png.flaticon.com/512/841/841364.png" alt="Página" class="w-14 mb-3">
+          <h3 class="text-lg font-bold text-indigo-400">Repositorio Página</h3>
+          <p class="text-gray-400 text-sm mt-2">Código fuente del sitio web para consulta y descargas.</p>
+        </a>
 
-        <!-- Sección de Instrucciones de Uso -->
-        <section class="mb-8">
-            <h2 class="text-2xl font-semibold border-l-4 border-indigo-500 pl-4 mb-4 text-indigo-300">Instrucciones de Uso</h2>
-            <ol class="list-decimal list-inside space-y-2 text-gray-300">
-                <li>Descargue el ejecutable de la versión deseada.</li>
-                <li>Guarde el archivo en una carpeta propia o institucional.</li>
-                <li>Ejecute el sistema haciendo doble clic sobre el archivo cada vez que lo necesite.</li>
-            </ol>
-            <div class="info-box bg-gray-700 border-l-4 border-red-500 p-4 rounded-lg text-gray-400 mt-6">
-                <b class="text-gray-200">Importante:</b>
-                <ul class="list-disc list-inside space-y-1 pl-4 mt-2">
-                    <li>El sistema está diseñado para ejecutarse localmente; <b>no almacena datos en la nube</b> ni realiza sincronización remota.</li>
-                    <li>No se instala como una aplicación del sistema; debe abrirse manualmente cada vez que se requiera consultar o gestionar las asignaciones.</li>
-                    <li>Para evitar posibles conflictos, guarde el ejecutable en una carpeta separada y no lo modifique.</li>
-                    <li>Si requiere una versión personalizada, comuníquese a través del repositorio para solicitar soporte.</li>
-                </ul>
-            </div>
-        </section>
+        <!-- Sistema -->
+        <a href="https://github.com/ap-xlr8/Sistema-asignador-aulas" target="_blank" 
+           class="bg-gray-700 p-6 rounded-xl shadow-lg hover:shadow-2xl hover:bg-gray-600 transition duration-300 flex flex-col items-center text-center">
+          <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Sistema" class="w-14 mb-3">
+          <h3 class="text-lg font-bold text-indigo-400">Repositorio Sistema</h3>
+          <p class="text-gray-400 text-sm mt-2">Aplicación ejecutable para gestión local de aulas.</p>
+        </a>
+      </div>
+    </section>
 
-        <!-- Pie de página -->
-        <div class="footer text-center text-gray-500 text-sm mt-8">
-            &copy; 2025 | Programa de Asignación de Aulas<br>
-            Desarrollado y mantenido por <a href="https://github.com/ap-xlr8" class="text-indigo-400 hover:text-indigo-300 transition-colors">ap-xlr8</a>
-        </div>
-    </div>
+    <!-- Descargas -->
+    <section class="text-center mb-10">
+      <h2 class="text-2xl font-semibold border-l-4 border-indigo-500 pl-4 inline-block text-indigo-300">Descargar Sistema</h2>
+      <p class="text-gray-300 leading-relaxed mt-4 mb-6">
+        A continuación puede consultar las versiones disponibles, sus actualizaciones y descargar el sistema:
+      </p>
+      <div class="overflow-x-auto">
+        <table class="w-full bg-gray-700 rounded-lg shadow-lg">
+          <thead>
+            <tr>
+              <th class="bg-indigo-600 text-white p-3 md:p-4 text-lg rounded-t-lg">Versión</th>
+              <th class="bg-indigo-600 text-white p-3 md:p-4 text-lg">Fecha de Publicación</th>
+              <th class="bg-indigo-600 text-white p-3 md:p-4 text-lg">Mejoras / Cambios</th>
+              <th class="bg-indigo-600 text-white p-3 md:p-4 text-lg rounded-t-lg">Descargar</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-gray-600 last:border-b-0">
+              <td class="p-3 md:p-4 text-gray-200">1.0</td>
+              <td class="p-3 md:p-4 text-gray-200">2025-01-20</td>
+              <td class="p-3 md:p-4 text-gray-200 text-left">Versión inicial, funciones básicas de asignación y visualización.</td>
+              <td class="p-3 md:p-4">
+                <a class="bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-2 px-4 rounded-lg shadow-md transition-colors" href="https://drive.usercontent.google.com/download?id=1czq2R9X7omcXuwqfX1-jNZKqQ5JbCGfu&export=download&authuser=0&confirm=t&uuid=125b4b3c-1821-4b83-82a9-5883361f476d&at=AN8xHopoJuWurlmOBz7EMrgyNZ6w:1755592553211">Descargar</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Instrucciones -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold border-l-4 border-indigo-500 pl-4 mb-4 text-indigo-300">Instrucciones de Uso</h2>
+      <ol class="list-decimal list-inside space-y-2 text-gray-300">
+        <li>Descargue el ejecutable de la versión deseada.</li>
+        <li>Guarde el archivo en una carpeta propia o institucional.</li>
+        <li>Ejecute el sistema haciendo doble clic sobre el archivo cada vez que lo necesite.</li>
+      </ol>
+      <div class="bg-gray-700 border-l-4 border-red-500 p-4 rounded-lg text-gray-400 mt-6">
+        <b class="text-gray-200">Importante:</b>
+        <ul class="list-disc list-inside space-y-1 pl-4 mt-2">
+          <li>El sistema está diseñado para ejecutarse localmente; <b>no almacena datos en la nube</b>.</li>
+          <li>No se instala como una aplicación del sistema; debe abrirse manualmente.</li>
+          <li>Guarde el ejecutable en una carpeta separada para evitar conflictos.</li>
+          <li>Si requiere una versión personalizada, solicítela mediante el repositorio.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center text-gray-500 text-sm mt-8 border-t border-gray-700 pt-6">
+      &copy; 2025 | Programa de Asignación de Aulas<br>
+      Desarrollado y mantenido por 
+      <a href="https://github.com/ap-xlr8" class="text-indigo-400 hover:text-indigo-300 transition-colors">ap-xlr8</a>
+    </footer>
+  </div>
+
 </body>
 </html>
